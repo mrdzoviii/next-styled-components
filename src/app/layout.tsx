@@ -1,9 +1,13 @@
-import React from 'react';
 
-import StyledComponentsRegistry from '../components/StyledComponentsRegistry';
+import StyledComponentsRegistry from 'src/components/StyledComponentsRegistry';
 import './styles.css';
+import {ReactNode} from "react";
 
-function RootLayout({ children }) {
+interface RootLayoutProps {
+    children: ReactNode;
+}
+
+function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
